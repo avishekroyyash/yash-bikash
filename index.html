@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pay login info</title>
+    <!-- title img -->
+     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- add tailwind + daisy -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -23,9 +25,22 @@
     </style>
 
 </head>
-<body >
-    <h1 class="bg-info">i love my self</h1>
-    <p class="">i can do . i will be succesful in my life</p>
-    <button class="btn btn-secondary">click Me</button>
+<body class="min-h-screen max-w-md bg-[#F4F5F7]  m-auto">
+ <div class="pt-50 ">
+    <img class="mx-auto" src="./assets/Logo-full.png" alt="">
+ </div>
+ <div class="pt-8">
+    <div class="fieldset bg-base-200 border-base-300 rounded-[20px] w-[402px] border p-8 m-auto">
+
+  <label class="label text-[#080808] font-medium">Mobile Number</label>
+  <input id="input-num" type="text" maxlength="11" class="input rounded-3xl bg-[#F4F5F7] " placeholder="Enter your number" />
+
+  <label class="label text-[#080808] font-medium">4 Digit Pin</label>
+  <input id="input-pin" type="password" maxlength="4" class="input rounded-3xl bg-[#F4F5F7]" placeholder="Enter 4 Digit Pin" />
+
+  <button id="btn" class="btn btn-primary mt-4 rounded-3xl">Login</button>
+    </div>
+</div>
+ <script src="/java.js/login.js"></script>
 </body>
 </html>
