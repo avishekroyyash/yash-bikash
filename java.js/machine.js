@@ -37,3 +37,43 @@ function add(a,b){
 function sub(a,b){
     return Number(a)-Number(b);
 }
+
+// id -> hidde all id -> match id unhide or open
+
+function show(id){
+    const transaction = document.getElementById('transaction-section');
+    console.log(transaction)
+    const addMoney = document.getElementById('add-money-section');
+      console.log(addMoney)
+    const cashOut = document.getElementById('cash-out-section');
+     console.log(cashOut)
+     const history =document.getElementById('history')
+    //hide all button 
+    transaction.classList.add('hidden');
+     addMoney.classList.add('hidden');
+      cashOut.classList.add('hidden');
+      history.classList.add('hidden')
+    
+   // if id match then hidden class will bee unhidden
+   const item = document.getElementById(id);
+   item.classList.remove('hidden');
+
+}
+
+   //this is for transaction history 
+   function transactionHistoryMaker(id){
+     //take the parent where transation will be add 
+     const historyMain = document.getElementById('history-container');
+     // make new div 
+     const div = document.createElement('div')
+     //add inner html
+     div.innerHTML = `
+         <div class="w-full bg-[#F4F5F7]" >
+         alert(' money is succuessfully ${id} is ')
+         </div>
+     `
+     //add to history in main div
+     historyMain.appendChild(div);
+   }
+   
+

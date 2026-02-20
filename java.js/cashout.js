@@ -34,7 +34,22 @@ document.getElementById('withdraw').addEventListener('click',function(){
         alert('cash out successfully');
         console.log('new amount : ',newAmount);
        mainAmount.innerText = newAmount
-
+       // add history of the cashout 
+     //take the parent where transation will be add 
+     const historyMain = document.getElementById('history-container');
+     // make new div 
+     const div = document.createElement('div')
+     //add inner html
+     
+     div.innerHTML = `
+         <div class="" >
+         <img class="w-[60px] mb-2" src="assets/Logo-full.png" alt="">
+          money is succuessfully cashout ${withdraw} and 
+          new money ${newAmount} to date ${new Date}
+         </div>
+     `
+     //add to history in main div
+     historyMain.appendChild(div);
     }
     else{
         alert('wrong pin number');
