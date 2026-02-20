@@ -49,13 +49,14 @@ function show(id){
      console.log(cashOut)
      const PayBill = document.getElementById('pay-bill-section')
      const history =document.getElementById('history')
+     const getBonus = document.getElementById('bonus-section')
     //hide all button 
     transaction.classList.add('hidden');
      addMoney.classList.add('hidden');
       cashOut.classList.add('hidden');
       PayBill.classList.add('hidden');
       history.classList.add('hidden');
-    
+      getBonus.classList.add('hidden')
    // if id match then hidden class will bee unhidden
    const item = document.getElementById(id);
    item.classList.remove('hidden');
