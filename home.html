@@ -75,8 +75,28 @@
      </div>
   </header>
 
+  <!-- transaction section -->
+   <section id="transaction-section" class="px-6  mb-20  py-5 ">
+<p class=" text-[18px] font-semibold mb-4">Transfer Money</p>
+   <fieldset class=" bg-base-200 border-base-300 rounded-[20px] w-[402px] border p-4 space-y-2">
+  
+
+  <label class="label">User Account Number</label>
+  <input id="transfer-num" type="text" maxlength="11" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Enter 11 digit number" />
+  
+   <label class="label">Amount</label>
+  <input id="transfer-amount" type="text" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Enter amount to transfer" />
+
+  <label class="label">Pin Number</label>
+  <input id="transfer-pass" type="password" maxlength="4" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Enter 4 digit pin number" />
+
+  <button id="send-now" class="btn btn-primary text-[20px] font-semibold p-5 mt-4 rounded-full w-full">Send Now</button>
+</fieldset>
+ </section>
+   
+
   <!-- form section of add money -->
-    <section class="px-6  mb-20  py-5 ">
+    <section id="add-money-section" class="px-6  mb-20  py-5 hidden">
 <p class=" text-[18px] font-semibold mb-4">Add Money</p>
    <fieldset class=" bg-base-200 border-base-300 rounded-[20px] w-[402px] border p-4 space-y-2">
   <label class="label">Select Bank</label>
@@ -101,7 +121,7 @@
  </section>
 
   <!-- form section of cash out  -->
- <section class="px-6  mb-20  py-5 hidden">
+ <section id="cash-out-section" class="px-6  mb-20  py-5 hidden">
 <p class=" text-[18px] font-semibold mb-4">Cash Out</p>
    <fieldset class=" bg-base-200 border-base-300 rounded-[20px] w-[402px] border p-4 space-y-2">
   
@@ -122,6 +142,7 @@
  <script src="./java.js/cashout.js"></script>
   <script src="./java.js/addmoney.js"></script>
  <script src="./java.js/machine.js"></script>
+ <script src="./java.js/transfer.js"></script>
 
 </body>
 </html>
