@@ -1,8 +1,12 @@
 document.getElementById('withdraw').addEventListener('click',function(){
     // console.log('cliced')
+    // alternative way
+    //  const contactNum = getValueFromId('cash-agent-num');
+    // console.log(contactNum)
     //get the agent number
     const agentNum = document.getElementById('cash-agent-num')
     const contact = agentNum.value ;
+    
     console.log(contact);
     if(contact.length!=11){
         alert('this is invalid number');

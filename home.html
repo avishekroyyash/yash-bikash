@@ -75,8 +75,33 @@
      </div>
   </header>
 
+  <!-- form section of add money -->
+    <section class="px-6  mb-20  py-5 ">
+<p class=" text-[18px] font-semibold mb-4">Add Money</p>
+   <fieldset class=" bg-base-200 border-base-300 rounded-[20px] w-[402px] border p-4 space-y-2">
+  <label class="label">Select Bank</label>
+    <select  id="select-bank" class="select rounded-full w-full  ">
+  <option disabled selected >Select a bank</option>
+  <option value="Dbbl">Dbbl</option>
+  <option value="City">City</option>
+  <option value="NCC">NCC</option>
+</select>
+
+  <label class="label">Bank Account Number</label>
+  <input id="add-agent-num" type="text" maxlength="11" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Enter 11 digit account number" />
+  
+   <label class="label">Amount to Add</label>
+  <input id="add-amount" type="text" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Add Amount to withdraw" />
+
+  <label class="label">Pin Number</label>
+  <input id="add-agent-pass" type="password" maxlength="4" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Enter 4 digit pin number" />
+
+  <button id="add-money" class="btn btn-primary text-[20px] font-semibold p-5 mt-4 rounded-full w-full">Add Money</button>
+</fieldset>
+ </section>
+
   <!-- form section of cash out  -->
- <section class="px-6  mb-20  py-5">
+ <section class="px-6  mb-20  py-5 hidden">
 <p class=" text-[18px] font-semibold mb-4">Cash Out</p>
    <fieldset class=" bg-base-200 border-base-300 rounded-[20px] w-[402px] border p-4 space-y-2">
   
@@ -93,6 +118,10 @@
   <button id="withdraw" class="btn btn-primary text-[20px] font-semibold p-5 mt-4 rounded-full w-full">Withdraw Money</button>
 </fieldset>
  </section>
+
  <script src="./java.js/cashout.js"></script>
+  <script src="./java.js/addmoney.js"></script>
+ <script src="./java.js/machine.js"></script>
+
 </body>
 </html>
