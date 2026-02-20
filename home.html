@@ -64,7 +64,7 @@
             <img src="./assets/opt-4.png" alt="">
             <p class="text-[#08080879] text-[14px]" >Get Bonus</p>
         </button>
-          <button class="btn flex-col h-full p-5 rounded-2xl border-2 border-gray-300">
+          <button onclick="show('pay-bill-section')" class="btn flex-col h-full p-5 rounded-2xl border-2 border-gray-300">
             <img src="./assets/opt-5.png" alt="">
             <p class="text-[#08080879] text-[14px]" >Pay Bill</p>
         </button>
@@ -140,7 +140,30 @@
 </fieldset>
  </section>
    
+  <!-- pay bill section -->
+     <section id="pay-bill-section" class="px-6   py-5  ">
+<p class=" text-[18px] font-semibold mb-4">Pay Bill</p>
+   <fieldset class=" bg-base-200 border-base-300 rounded-[20px] w-[402px] border p-4 space-y-2">
+  <label class="label">Select To Pay</label>
+    <select  id="bill-select-bank" class="select rounded-full w-full  ">
+  <option disabled selected >Select a bank</option>
+  <option value="Dbbl">Dbbl</option>
+  <option value="City">City</option>
+  <option value="NCC">NCC</option>
+</select>
+
+  <label class="label">Biller Account Number</label>
+  <input id="bill-acc-num" type="text" maxlength="11" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Enter account number" />
   
+   <label class="label">Amount to Pay</label>
+  <input id="pay-bill-amount" type="text" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Add Amount to pay" />
+
+  <label class="label">Pin Number</label>
+  <input id="pay-bill-agent-pass" type="password" maxlength="4" class="input rounded-full w-full bg-[#F4F5F7]" placeholder="Enter 4 digit pin number" />
+
+  <button id="pay-now" class="btn btn-primary text-[20px] font-semibold p-5 mt-4 rounded-full w-full">Pay Now</button>
+</fieldset>
+ </section>
 
 
   <!-- transaction history of all section  -->
@@ -154,11 +177,14 @@
    </div>
    </section>
 
+   <!-- add external java  -->
 
+ <script src="./java.js/addmoney.js"></script>
  <script src="./java.js/cashout.js"></script>
-  <script src="./java.js/addmoney.js"></script>
+  <script src="./java.js/transfer.js"></script>
+  <script src="./java.js/paybill.js"></script>
  <script src="./java.js/machine.js"></script>
- <script src="./java.js/transfer.js"></script>
+ 
 
 </body>
 </html>
